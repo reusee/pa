@@ -25,7 +25,6 @@ import (
 	"golang.org/x/tools/go/analysis/passes/nilness"
 	"golang.org/x/tools/go/analysis/passes/pkgfact"
 	"golang.org/x/tools/go/analysis/passes/printf"
-	"golang.org/x/tools/go/analysis/passes/shadow"
 	"golang.org/x/tools/go/analysis/passes/shift"
 	"golang.org/x/tools/go/analysis/passes/sortslice"
 	"golang.org/x/tools/go/analysis/passes/stdmethods"
@@ -63,7 +62,6 @@ var Analyzers = []*analysis.Analyzer{
 	nilness.Analyzer,
 	pkgfact.Analyzer,
 	printf.Analyzer,
-	shadow.Analyzer,
 	shift.Analyzer,
 	sortslice.Analyzer,
 	stdmethods.Analyzer,

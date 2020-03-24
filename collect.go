@@ -53,6 +53,12 @@ func main() {
 
 	analyzers := make(map[string]map[string]bool)
 	packages.Visit(pkgs, nil, func(pkg *packages.Package) {
+		if map[string]bool{
+			// too many false positives
+			"golang.org/x/tools/go/analysis/passes/shadow": true,
+		}[pkg.PkgPath] {
+			return
+		}
 		globalScope := pkg.Types.Scope()
 		for _, name := range globalScope.Names() {
 			obj := globalScope.Lookup(name)

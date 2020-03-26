@@ -4,6 +4,7 @@ import (
 	"golang.org/x/tools/go/analysis/multichecker"
 	"honnef.co/go/tools/simple"
 	"honnef.co/go/tools/staticcheck"
+	"honnef.co/go/tools/unused"
 )
 
 func main() {
@@ -13,5 +14,6 @@ func main() {
 	for _, analyzer := range simple.Analyzers {
 		Analyzers = append(Analyzers, analyzer)
 	}
+	Analyzers = append(Analyzers, unused.NewChecker(true).Analyzer())
 	multichecker.Main(Analyzers...)
 }

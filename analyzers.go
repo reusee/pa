@@ -10,6 +10,7 @@ import (
 	"golang.org/x/tools/go/analysis/passes/buildssa"
 	"golang.org/x/tools/go/analysis/passes/buildtag"
 	"golang.org/x/tools/go/analysis/passes/cgocall"
+	"golang.org/x/tools/go/analysis/passes/composite"
 	"golang.org/x/tools/go/analysis/passes/copylock"
 	"golang.org/x/tools/go/analysis/passes/ctrlflow"
 	"golang.org/x/tools/go/analysis/passes/deepequalerrors"
@@ -48,6 +49,7 @@ var Analyzers = []*analysis.Analyzer{
 	buildssa.Analyzer,
 	buildtag.Analyzer,
 	cgocall.Analyzer,
+	composite.Analyzer,
 	copylock.Analyzer,
 	ctrlflow.Analyzer,
 	deepequalerrors.Analyzer,

@@ -14,6 +14,6 @@ func main() {
 	for _, analyzer := range simple.Analyzers {
 		Analyzers = append(Analyzers, analyzer)
 	}
-	Analyzers = append(Analyzers, unused.NewChecker(true).Analyzer())
+	Analyzers = append(Analyzers, unused.Analyzer)
 	multichecker.Main(Analyzers...)
 }

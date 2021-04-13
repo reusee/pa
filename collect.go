@@ -89,7 +89,7 @@ import (
 	}() + `
 )
 
-var Analyzers = []*analysis.Analyzer{
+var XToolsAnalyzers = []*analysis.Analyzer{
   ` + func() (ret string) {
 		var names []string
 		for _, m := range analyzers {

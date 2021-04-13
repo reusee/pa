@@ -1,4 +1,4 @@
-package main
+package pa
 
 import (
 	"golang.org/x/tools/go/analysis"
@@ -40,7 +40,7 @@ import (
 	"golang.org/x/tools/go/analysis/passes/unusedresult"
 )
 
-var Analyzers = []*analysis.Analyzer{
+var XToolsAnalyzers = []*analysis.Analyzer{
 	asmdecl.Analyzer,
 	assign.Analyzer,
 	atomic.Analyzer,

@@ -15,7 +15,6 @@ import (
 	"golang.org/x/tools/go/analysis/passes/ctrlflow"
 	"golang.org/x/tools/go/analysis/passes/deepequalerrors"
 	"golang.org/x/tools/go/analysis/passes/errorsas"
-	"golang.org/x/tools/go/analysis/passes/fieldalignment"
 	"golang.org/x/tools/go/analysis/passes/findcall"
 	"golang.org/x/tools/go/analysis/passes/framepointer"
 	"golang.org/x/tools/go/analysis/passes/httpresponse"
@@ -54,7 +53,7 @@ var XToolsAnalyzers = []*analysis.Analyzer{
 	ctrlflow.Analyzer,
 	deepequalerrors.Analyzer,
 	errorsas.Analyzer,
-	fieldalignment.Analyzer,
+	//fieldalignment.Analyzer,
 	findcall.Analyzer,
 	framepointer.Analyzer,
 	httpresponse.Analyzer,

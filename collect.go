@@ -75,7 +75,7 @@ func main() {
 		}
 	})
 
-	src := `package main
+	src := `package pa
 
 import (
   "golang.org/x/tools/go/analysis"

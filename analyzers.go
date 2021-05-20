@@ -26,7 +26,9 @@ import (
 	"golang.org/x/tools/go/analysis/passes/nilness"
 	"golang.org/x/tools/go/analysis/passes/pkgfact"
 	"golang.org/x/tools/go/analysis/passes/printf"
+	"golang.org/x/tools/go/analysis/passes/reflectvaluecompare"
 	"golang.org/x/tools/go/analysis/passes/shift"
+	"golang.org/x/tools/go/analysis/passes/sigchanyzer"
 	"golang.org/x/tools/go/analysis/passes/sortslice"
 	"golang.org/x/tools/go/analysis/passes/stdmethods"
 	"golang.org/x/tools/go/analysis/passes/stringintconv"
@@ -37,6 +39,7 @@ import (
 	"golang.org/x/tools/go/analysis/passes/unreachable"
 	"golang.org/x/tools/go/analysis/passes/unsafeptr"
 	"golang.org/x/tools/go/analysis/passes/unusedresult"
+	"golang.org/x/tools/go/analysis/passes/unusedwrite"
 )
 
 var XToolsAnalyzers = []*analysis.Analyzer{
@@ -53,7 +56,6 @@ var XToolsAnalyzers = []*analysis.Analyzer{
 	ctrlflow.Analyzer,
 	deepequalerrors.Analyzer,
 	errorsas.Analyzer,
-	//fieldalignment.Analyzer,
 	findcall.Analyzer,
 	framepointer.Analyzer,
 	httpresponse.Analyzer,
@@ -65,7 +67,9 @@ var XToolsAnalyzers = []*analysis.Analyzer{
 	nilness.Analyzer,
 	pkgfact.Analyzer,
 	printf.Analyzer,
+	reflectvaluecompare.Analyzer,
 	shift.Analyzer,
+	sigchanyzer.Analyzer,
 	sortslice.Analyzer,
 	stdmethods.Analyzer,
 	stringintconv.Analyzer,
@@ -76,4 +80,5 @@ var XToolsAnalyzers = []*analysis.Analyzer{
 	unreachable.Analyzer,
 	unsafeptr.Analyzer,
 	unusedresult.Analyzer,
+	unusedwrite.Analyzer,
 }

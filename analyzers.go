@@ -40,6 +40,7 @@ import (
 	"golang.org/x/tools/go/analysis/passes/unsafeptr"
 	"golang.org/x/tools/go/analysis/passes/unusedresult"
 	"golang.org/x/tools/go/analysis/passes/unusedwrite"
+	"golang.org/x/tools/go/analysis/passes/usesgenerics"
 )
 
 var XToolsAnalyzers = []*analysis.Analyzer{
@@ -81,4 +82,5 @@ var XToolsAnalyzers = []*analysis.Analyzer{
 	unsafeptr.Analyzer,
 	unusedresult.Analyzer,
 	unusedwrite.Analyzer,
+	usesgenerics.Analyzer,
 }

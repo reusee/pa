@@ -4,8 +4,9 @@ go 1.14
 
 require (
 	github.com/kisielk/gotool v1.0.0 // indirect
-	golang.org/x/mod v0.5.0 // indirect
-	golang.org/x/sys v0.0.0-20210820121016-41cdb8703e55 // indirect
-	golang.org/x/tools v0.1.5
-	honnef.co/go/tools v0.2.1
+	golang.org/x/exp/typeparams v0.0.0-20220414153411-bcd21879b8fd // indirect
+	golang.org/x/sys v0.0.0-20220422013727-9388b58f7150 // indirect
+	golang.org/x/tools v0.1.11-0.20220316014157-77aa08bb151a
+	golang.org/x/xerrors v0.0.0-20220411194840-2f41105eb62f // indirect
+	honnef.co/go/tools v0.3.1
 )
